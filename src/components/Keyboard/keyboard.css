@@ -1,0 +1,42 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keys-row {
+  display: flex;
+  align-items: center;
+}
+.function-key {
+  background-color: grey;
+  color: white;
+  font-weight: var(--font-bold);
+  font-size: var(--font-md);
+  margin: 0.25em;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  width: 25%;
+  height: 200px;
+  bottom: 16px;
+  border-radius: 16px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal button {
+  margin-left: 16px;
+  padding: 16px;
+}
+
+#close-modal {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 4px;
+}

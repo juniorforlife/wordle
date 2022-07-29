@@ -1,0 +1,40 @@
+.tile {
+  font-size: 2rem;
+  font-weight: bold;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3a3a3c;
+  background: none;
+  cursor: pointer;
+  place-items: center;
+}
+
+#correct {
+  border: none;
+  animation: flip 1s linear;
+  background-color: #6aaa64;
+}
+
+#present {
+  border: none;
+  animation: flip 1s linear;
+  background-color: #c9b458;
+}
+
+#wrong {
+  border: none;
+  animation: flip 1s linear;
+  background-color: #787c7e;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
